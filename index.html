@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&family=Space+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="home-page">
+    <header class="top-bar">
+        <a href="#home" class="logo-link">
+            <div class="nav-items-desktop">
+                <div class="nav-item"><span>PRESENTED BY:</span> Sarthik</div>
+                <div class="nav-item"><span>WORKS:</span> 2021 – Present</div>
+                <div class="nav-item"><span>INSTAGRAM:</span> sarthik.22</div>
+                <div class="nav-item"><span>MAIL:</span>sarthik.maity.22.11@gmail.com</div>
+            </div>
+        </a>
+
+        <div class="mobile-menu-btn" id="menuToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="menu-content">
+            <a href="#home" class="mobile-nav-item">Home</a>
+            <a href="#about" class="mobile-nav-item">About</a>
+            <a href="#gallery" class="mobile-nav-item">Gallery</a>
+            <div class="mobile-nav-item"><span>PRESENTED BY:</span> Sarthik</div>
+            <div class="mobile-nav-item"><span>WORKS:</span> 2021 – Present</div>
+            <div class="mobile-nav-item"><span>INSTAGRAM:</span>sarthik.22</div>
+            <div class="mobile-nav-item"><span>MAIL:</span>sarthik.maity.22.11@gmail.com</div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="section-wrapper">
+        <main class="container">
+            <section class="hero-section">
+                <h1 class="hero-title">PORTFOLIO</h1>
+
+                <div class="hero-subtitle">
+                    <span>GRAPHIC DESIGNER &</span>
+                    <span>VIDEOEDITOR</span>
+                </div>
+
+                <div class="polaroid-wrapper">
+                    <div class="polaroid">
+                        <img src="assets/1.jpeg" alt="Sarthik">
+                        <div class="polaroid-caption">Sarthik</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="landscape-section">
+                <div class="landscape-image-wrapper">
+                    <img src="assets/image.png" alt="Landscape" class="landscape-image">
+                </div>
+                <div class="page-number">01</div>
+            </section>
+        </main>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-wrapper about-page">
+        <main class="about-container">
+            <div class="about-grid">
+                <!-- Left Side: Polaroid -->
+                <div class="about-left">
+                    <div class="polaroid-wrapper about-polaroid">
+                        <div class="polaroid">
+                            <div class="polaroid-header">IT'S ME</div>
+                            <img src="assets/3.jpeg" alt="sarthik Profile">
+                            <div class="polaroid-info">
+                                <h2 class="profile-name">SARTHIK MAITY</h2>
+                                <p class="social-handle">Instagram: @sarthik.22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Content -->
+                <div class="about-right">
+                    <h1 class="about-title">WHO I AM?</h1>
+
+                    <div class="about-stats">
+                        <div class="stat"><span>AGE:</span> 20 YEARS OLD</div>
+                        <!-- <div class="stat"><span>EXPERIENCE:</span> 05 YEARS</div> -->
+                    </div>
+
+                    <div class="about-text">
+                        <p>Hi, I’m Sarthik Maity, a 20-year-old from Kolkata with a foot in two different worlds: Technology and Design.
+
+                            Currently, I’m pursuing my Bachelor’s in CSE (AI & Machine Learning). While I spend a lot of my time understanding algorithms and data, I’ve always believed that even the best tech needs to look good. That’s where my creative side comes in.
+                            
+                            When I’m not coding, you’ll usually find me in Photoshop or editing videos. I’m a huge football fan, and most of my design work is centered around that—creating high-energy posters of my favorite players.</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-number-about">02</div>
+        </main>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section id="gallery" class="section-wrapper gallery-section">
+        <div class="gallery-container">
+            <div class="gallery-header">
+                <h1 class="gallery-main-title">MY WORK GALLERY</h1>
+                <div class="gallery-arrow">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="category-grid">
+                <!-- Food Category -->
+                <a href="foot-gallery.html" class="category-card">
+                    <div class="card-header">
+                        <span class="category-name">FOOTBALL</span>
+                        <span class="category-number">01</span>
+                    </div>
+                    <div class="card-image">
+                        <img src="FOOTBALL/art4-ronaldo.png" alt="Food Photography">
+                    </div>
+                </a>
+
+                <!-- Travel Category
+                <div class="category-card">
+                    <div class="card-header">
+                        <span class="category-name">TRAVEL</span>
+                        <span class="category-number">02</span>
+                    </div>
+                    <div class="card-image">
+                        <img src="assets/img2.jpeg" alt="Travel Photography">
+                    </div>
+                </div>
+
+                <!-- Wedding Category -->
+                <!-- <div class="category-card">
+                    <div class="card-header">
+                        <span class="category-name">WEDDING</span>
+                        <span class="category-number">03</span>
+                    </div>
+                    <div class="card-image">
+                        <img src="assets/img1.jpeg" alt="Wedding Photography">
+                    </div>
+                </div> -->
+
+                <!-- Interior Category -->
+                <!-- <div class="category-card">
+                    <div class="card-header">
+                        <span class="category-name">INTERIOR</span>
+                        <span class="category-number">04</span>
+                    </div>
+                    <div class="card-image">
+                        <img src="assets/bgimg.JPG" alt="Interior Photography">
+                    </div>
+                </div> -->
+
+                <!-- Street Category -->
+                <!-- <div class="category-card">
+                    <div class="card-header">
+                        <span class="category-name">STREET</span>
+                        <span class="category-number">05</span>
+                    </div>
+                    <div class="card-image">
+                        <img src="assets/img3.JPG" alt="Street Photography">
+                    </div>
+                </div> -->
+
+                <!-- Videography Category -->
+                <!-- <div class="category-card">
+                    <div class="card-header">
+                        <span class="category-name">VIDEOGRAPHY</span>
+                        <span class="category-number">06</span>
+                    </div>
+                    <div class="card-image">
+                        <img src="assets/img1.jpeg" alt="Videography">
+                    </div>
+                </div>  -->
+            </div>
+
+            <div class="page-number-gallery">03</div>
+        </div>
+    </section>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinks = document.querySelectorAll('.mobile-nav-item, .nav-link, .logo-link');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.classList.toggle('no-scroll');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            });
+        });
+    </script>
+</body>
+
+</html>
