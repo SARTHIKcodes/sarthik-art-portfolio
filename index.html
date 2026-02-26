@@ -11,6 +11,186 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&family=Space+Mono&display=swap"
         rel="stylesheet">
+
+    <style>
+        .contact-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 6rem 4rem 5rem 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .contact-inner {
+            display: grid;
+            grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.1fr);
+            gap: 4rem;
+            align-items: flex-start;
+        }
+
+        .contact-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2.8rem, 6vw, 4.5rem);
+            line-height: 1.05;
+            margin-bottom: 3rem;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75rem;
+        }
+
+        .contact-row {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .contact-number {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: rgba(245, 245, 243, 0.55);
+            margin-top: 0.4rem;
+        }
+
+        .contact-label {
+            font-family: var(--font-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: rgba(245, 245, 243, 0.7);
+            margin-bottom: 0.35rem;
+        }
+
+        .contact-input,
+        .contact-textarea {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(245, 245, 243, 0.16);
+            padding: 0.25rem 0;
+            font-family: var(--font-secondary);
+            font-size: 0.95rem;
+            color: var(--text-color);
+            outline: none;
+        }
+
+        .contact-input::placeholder,
+        .contact-textarea::placeholder {
+            color: rgba(245, 245, 243, 0.6);
+        }
+
+        .contact-input:focus,
+        .contact-textarea:focus {
+            border-color: rgba(245, 245, 243, 0.7);
+        }
+
+        .contact-textarea {
+            resize: vertical;
+            min-height: 3.5rem;
+        }
+
+        .contact-right-title {
+            font-family: var(--font-secondary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: rgba(245, 245, 243, 0.7);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-right-heading {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .contact-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.1rem;
+        }
+
+        .contact-link-label {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: rgba(245, 245, 243, 0.55);
+            margin-bottom: 0.15rem;
+        }
+
+        .contact-link a,
+        .contact-link span {
+            font-family: var(--font-secondary);
+            font-size: 0.95rem;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .contact-link a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-submit-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .contact-submit {
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 999px;
+            border: none;
+            background: var(--text-color);
+            color: #000;
+            font-family: var(--font-secondary);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 18px 35px rgba(0, 0, 0, 0.6);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        .contact-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 22px 40px rgba(0, 0, 0, 0.75);
+            background: #ffffff;
+        }
+
+        .contact-submit:active {
+            transform: translateY(0);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        @media (max-width: 900px) {
+            .contact-section {
+                padding-inline: 1.5rem;
+            }
+
+            .contact-inner {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 3rem;
+            }
+
+            .contact-title {
+                margin-bottom: 2.25rem;
+            }
+        }
+    </style>
 </head>
 
 <body class="home-page">
@@ -205,6 +385,92 @@
             </div>
 
             <div class="page-number-gallery">03</div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <form action="https://api.web3forms.com/submit" method="POST"></form>s
+        <div class="contact-inner">
+            <div class="contact-left">
+                
+                <h2 class="contact-title">
+                    Let's work<br>together
+                </h2>
+                <form class="contact-form" id="contact-form">
+                    <div class="contact-row">
+                        <input type="hidden" name="access_key" value="184c6851-9f18-4a88-ac06-4467c2122e70">
+                        <div class="contact-number">01</div>
+                        <div>
+                            <div class="contact-label">What's your name?</div>
+                            <input class="contact-input" type="text" name="name"
+                                placeholder="John Doe*" required>
+                        </div>
+                    </div>
+
+                    <div class="contact-row">
+                        <div class="contact-number">02</div>
+                        <div>
+                            <div class="contact-label">What's your email?</div>
+                            <input class="contact-input" type="email" name="email"
+                                placeholder="john@doe.com*" required>
+                        </div>
+                    </div>
+
+                    <!-- <div class="contact-row">
+                        <div class="contact-number">03</div>
+                        <div>
+                            <div class="contact-label">What's the name of your organization?</div>
+                            <input class="contact-input" type="text" name="organization"
+                                placeholder="John &amp; Doe ®">
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="contact-row">
+                        <div class="contact-number">04</div>
+                        <div>
+                            <div class="contact-label">What services are you looking for?</div>
+                            <input class="contact-input" type="text" name="services"
+                                placeholder="Web design, web development …">
+                        </div>
+                    </div> -->
+
+                    <div class="contact-row">
+                        <div class="contact-number">03</div>
+                        <div>
+                            <div class="contact-label">Your message</div>
+                            <textarea class="contact-textarea" name="message"
+                                placeholder="type here"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <div class="contact-right-title">Contact</div>
+                <div class="contact-right-heading">Let's connect online</div>
+                <ul class="contact-links">
+                    <li class="contact-link">
+                        <div class="contact-link-label">LinkedIn</div>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener">https://www.linkedin.com/in/sarthik-maity-004a68380/</a>
+                    </li>
+                    <li class="contact-link">
+                        <div class="contact-link-label">GitHub</div>
+                        <a href="https://github.com" target="_blank" rel="noopener">https://github.com/SARTHIKcodes</a>
+                    </li>
+                    <li class="contact-link">
+                        <div class="contact-link-label">Instagram</div>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener">https://www.instagram.com/sarthik.22/</a>
+                    </li>
+                    <li class="contact-link">
+                        <div class="contact-link-label">Mail</div>
+                        <span>sarthik.maity.22.11@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact-submit-wrapper">
+            <button type="submit" form="contact-form" class="contact-submit">Send it</button>
         </div>
     </section>
 
